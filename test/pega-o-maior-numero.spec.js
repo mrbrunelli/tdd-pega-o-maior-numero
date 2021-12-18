@@ -1,16 +1,6 @@
 const assert = require("assert");
 
-const pegaOMaiorNumero = (numeros) => {
-  let maior = 0;
-
-  for (const numero of numeros) {
-    if (numero > maior) {
-      maior = numero;
-    }
-  }
-
-  return maior;
-};
+const pegaOMaiorNumero = (numeros) => Math.max(...numeros);
 
 describe("pegaOMaiorNumero", () => {
   it("Deve retornar o maior número de uma lista", () => {
